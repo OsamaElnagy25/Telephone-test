@@ -1,0 +1,138 @@
+body {
+font-family:Cursive ;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+html {
+	--scrollbarBG: #1b262c;
+	--thumbBG:grey;
+  }
+  body::-webkit-scrollbar {
+	width: 11px;
+  }
+  body {
+	scrollbar-width: thin;
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+	background-color: var(--thumbBG) ;
+	border-radius: 6px;
+	border: 3px solid var(--scrollbarBG);
+	}
+	.iti__country-name{
+		display: inline-block;
+		width: 100px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.search-container{
+		background-color: rgba(128, 128, 128, 0.938);
+	}
+	.iti__country.iti__standard{
+		border-left-style: ridge;
+		border-right-style: ridge;
+		border-bottom-style: ridge;
+		border-width: 0.01px;;
+		color: #c7cace;
+		background-color: #1b262c !important;
+  }
+	
+	.iti__country.iti__standard:hover{
+		  background-color: #595238 !important;
+	}
+
+.wrapper {
+	margin-bottom: 20px;
+}
+
+/*****************************************************
+	Custom styling example bellow.
+*****************************************************/
+.iti {
+	display: block !important;
+	margin-bottom: 20px;
+}
+
+.iti .dropdown-menu.country-dropdown {
+
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-color: #c7cace;
+	margin-top: -1px;
+}
+
+.iti .iti__country-list {
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+	box-shadow: none;
+	font-size: 15px;
+	margin-left: 0;
+	width: 250px;
+	max-height: 170px;
+}
+
+.iti__flag-container.open + input {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.iti .search-container input {
+	font-size: 14px;
+	border-color: #299e3c;
+	border-radius: 0;
+	padding: 5px 10px;
+}
+.iti .search-container input:focus {
+	outline: none;
+}
+@media screen and (max-width: 479px) {
+	.iti .iti__country-list {
+		width: 88.3vw;
+	}
+}
+
+ngx-intl-tel-input input {
+	background-color: rgba(139, 59, 59, 0);
+	height: 44px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #16be70;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+ngx-intl-tel-input.ng-invalid.ng-touched input {
+	border: 1px solid #c0392b;
+}
+
+ngx-intl-tel-input input:hover {
+	background-color: rgba(253, 249, 249, 0.13);
+
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+ngx-intl-tel-input input:focus {
+	outline: none ;
+	border-color: #3498db;
+	box-shadow: 0 0 0 0 #000;
+}
+
+ngx-intl-tel-input input::-webkit-input-placeholder {
+	color: #CD5C5C;
+}
+
+ngx-intl-tel-input input:-ms-input-placeholder {
+	color: #000;
+}
+
+ngx-intl-tel-input input::-ms-input-placeholder {
+	color: #000;
+}
+
+ngx-intl-tel-input input::placeholder {
+	color: #000;
+}
